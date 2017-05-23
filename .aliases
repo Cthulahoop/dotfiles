@@ -1,0 +1,18 @@
+# make ls verbose by default
+alias ls='ls -lGFA'
+
+# some misc shortcuts
+# alias nw='nodewebkit'
+alias reload='. ~/.bash_profile'
+
+# making a cli zip alias that defaults to folders and excludes hidden files
+alias zipr='zip -r -X'
+
+# making my 256 color chart more accessible
+alias 256='. ~/.colors'
+
+# project related shortcuts
+# alias web='cd ~/work/web'
+alias wrk='cd ~/work'
+alias po='polymer'
+alias config='/usr/bin/git --git-dir=/Users/ricewing/.cfg/ --work-tree=/Users/ricewing'

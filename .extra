@@ -1,0 +1,7 @@
+# MISC EXTRAS
+
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
+
+# git branch autocompletion via tab
+source ~/.git-completion.bash

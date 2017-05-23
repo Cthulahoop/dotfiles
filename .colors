@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# generates an 8 bit color table (256 colors) for reference,
+# using the ANSI CSI+SGR 33[48;5;${val}m for background and
+# 33[38;5;${val}m for text (see "ANSI Code" on Wikipedia)
+#
+echo -e "\\033[48;5;238m\n"
+echo -e " 256 COLOR CHART"
+echo -e "\\033[m"
+echo -e "DEFAULT COLORS"
+echo -en "      "
+for i in {0..15}; do
+    printf " %2b  " $i
+done
+echo -e ""
+printf " %3b  " 0
+for i in {0..15}; do
+    echo -en "\\033[48;5;${i}m    \\033[m "
+done
+echo -e ""
+echo -e "CUSTOM COLORS"
+echo -en "      "
+for i in {0..11}; do
+    printf " %3b  " $i
+done
+echo -e ""
+for i in {0..19}; do
+    let "i = i*12 +16"
+    printf " %3b  " $i
+    for j in {0..11}; do
+        let "val = i+j"
+        echo -en "\\033[48;5;${val}m$(printf " %3b" $val) \\033[m "
+    done
+    echo -e ""
+done
+echo -e ""
