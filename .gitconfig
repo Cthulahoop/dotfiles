@@ -14,6 +14,7 @@
     l = log --pretty=format:'\t%C(cyan dim)%h%Creset%C(auto) %<(50,trunc)%s %C(yellow dim)%C(cyan dim)%<(14)%an %Creset%C(yellow dim)%<(10)%ar%Creset %C(auto)%d' --graph --decorate=full
     f = fetch origin -p
     rb = rebase origin/develop
+		pm = push origin master
 [push]
 	default = matching
 [color]
