@@ -14,6 +14,9 @@ alias 256='. ~/.colors'
 # project related shortcuts
 # alias web='cd ~/work/web'
 alias wrk='cd ~/work'
-alias po='polymer'
 alias svr='live-server'
+alias po='polymer'
+alias psvr='polymer server --open'
+
+# dotfiles git solution
 alias df='/usr/bin/git --git-dir=/Users/ricewing/.cfg/ --work-tree=/Users/ricewing'

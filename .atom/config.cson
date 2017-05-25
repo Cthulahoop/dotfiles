@@ -53,7 +53,6 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "tree-view-git-status": {}
   welcome:
     showOnStartup: false
